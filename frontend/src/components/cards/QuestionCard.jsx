@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useRef } from "react";
 import { LuChevronDown, LuPin, LuPinOff, LuSparkles } from "react-icons/lu";
-import AIResponsePreview from "../../pages/InterviewPrep/components/AIResponsePreview";
+import AIResponsePreview from "../../pages/Interviewprep/components/AIResponsePreview";
 
 const QuestionCard = ({
   question,

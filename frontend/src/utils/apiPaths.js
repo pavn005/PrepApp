@@ -1,4 +1,4 @@
-export const BASE_URL = "https://proview-ai.onrender.com";
+export const BASE_URL = "http://localhost:8000";
 
 export const API_PATHS = {
   AUTH: {
@@ -14,10 +14,10 @@ export const API_PATHS = {
     GENERATE_EXPLANATION: "/api/ai/generate-explanation", // Generate concept explanation using Gemini
   },
   SESSION: {
-    CREATE: "/api/sessions/create", // Create a new interview session with questions
-    GET_ALL: "/api/sessions/my-sessions", // Get all user sessions
-    GET_ONE: (id) => `/api/sessions/${id}`, // Get session details with questions
-    DELETE: (id) => `/api/sessions/${id}`, // Delete a session
+    CREATE: "/api/session/create", // Create a new interview session with questions
+    GET_ALL: "/api/session/my-sessions", // Get all user sessions
+    GET_ONE: (id) => `/api/session/${id}`, // Get session details with questions
+    DELETE: (id) => `/api/session/${id}`, // Delete a session
   },
   QUESTION: {
     ADD_TO_SESSION: "/api/questions/add", // Add more questions to a session
